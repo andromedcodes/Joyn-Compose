@@ -1,5 +1,6 @@
 package de.joyn.joyncompose.ui
 
+import androidx.annotation.DrawableRes
 import androidx.compose.Composable
 import androidx.ui.core.Alignment
 import androidx.ui.core.ContentScale
@@ -32,7 +33,10 @@ import de.joyn.joyncompose.parseColor
 
 @Composable
 fun StandardCard(
-    backgroundColor: Color
+    backgroundColor: Color,
+    @DrawableRes backgroundImage: Int,
+    @DrawableRes artLogo: Int,
+    @DrawableRes brandLogo: Int
 ) {
     Box(
         shape = RoundedCornerShape(4.dp),
@@ -48,7 +52,7 @@ fun StandardCard(
             ) {
                 Stack(modifier = Modifier.fillMaxSize()) {
                     Image(
-                        asset = imageResource(id = R.drawable.gntm),
+                        asset = imageResource(id = backgroundImage),
                         contentScale = ContentScale.Crop
                     )
                     Box(
@@ -56,7 +60,7 @@ fun StandardCard(
                             .gravity(Alignment.TopEnd).padding(top = 14.dp)
                     ) {
                         Image(
-                            asset = imageResource(id = R.drawable.pro_sieben_white),
+                            asset = imageResource(id = brandLogo),
                             modifier = Modifier
                                 .preferredSize(width = 12.dp, height = 12.dp)
                         )
@@ -79,7 +83,7 @@ fun StandardCard(
                     .padding(10.dp)
             ) {
                 Image(
-                    asset = imageResource(id = R.drawable.gntm_art_logo),
+                    asset = imageResource(id = artLogo),
                     modifier = Modifier.padding(10.dp)
                 )
             }
@@ -102,6 +106,9 @@ fun StandardCard(
 @Composable
 private fun preview() {
     StandardCard(
-        backgroundColor = "#7b1118".parseColor()
+        backgroundColor = "#7b1118".parseColor(),
+        backgroundImage = R.drawable.gntm,
+        artLogo = R.drawable.gntm_art_logo,
+        brandLogo = R.drawable.pro_sieben_white
     )
 }

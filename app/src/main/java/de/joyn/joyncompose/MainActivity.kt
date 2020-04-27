@@ -7,13 +7,14 @@ import androidx.ui.core.setContent
 import androidx.ui.foundation.Text
 import androidx.ui.material.MaterialTheme
 import androidx.ui.tooling.preview.Preview
+import de.joyn.joyncompose.screens.HomeScreen
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             MaterialTheme {
-                Greeting("Android")
+                HomeScreen()
             }
         }
     }
