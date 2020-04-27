@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.ui:ui-animation-core:0.1.0-dev09@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/714829bf530c0892167287e66c4d8aac/jetified-ui-animation-core-0.1.0-dev09/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/714829bf530c0892167287e66c4d8aac/jetified-ui-animation-core-0.1.0-dev09/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/714829bf530c0892167287e66c4d8aac/jetified-ui-animation-core-0.1.0-dev09/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.ui/ui-animation-core/0.1.0-dev09/50ed288297360ff2172c743ad7a4534240102c2d/ui-animation-core-0.1.0-dev09-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
